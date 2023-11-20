@@ -8,9 +8,9 @@ This course is a fundamental introduction to web development and programming con
 
 - HTML, CSS, and JavaScript
 
-## Assignments
+## Homeworks
 
-1. [Assignment 1: HTML and CSS Basics](/homeworks/homework1)
+1. [Homework 1: HTML and CSS Basics](/homeworks/homework1)
 
 ## Exams
 
