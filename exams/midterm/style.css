@@ -372,7 +372,7 @@ body {
   background-color: var(--gray);
   z-index: 3;
   position: absolute;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .footer-top{
@@ -384,6 +384,8 @@ body {
   background-color: var(--gray);
   display: flex; 
   justify-content: center;
+  margin-top: 10px;
+  border-top: 1px solid var(--whiteOpac);
 }
 .footer .card {
   color: var(--white);
@@ -391,8 +393,6 @@ body {
   flex-direction: column;
   justify-content: center;
   border-radius: 4px;
-  margin-right: 200px;
-  margin-left:200px
 }
 .footer-header{
   margin-bottom: 10px;
@@ -406,6 +406,7 @@ body {
 }
 .footer-text{
   margin-bottom: 2px;
+  font-size: 14px;
 }
 
 
