@@ -16,16 +16,3 @@ This course is a fundamental introduction to web development and programming con
 
 - [Midterm Exam](/exams/midterm)
 
-## How to Contribute
-
-If you would like to contribute to this repository, please follow these steps:
-
-1. Fork the repository by clicking the "Fork" button.
-2. Create a new branch for your changes: `git checkout -b new-assignment`
-3. Make your changes and commit them: `git commit -am 'Added a new assignment'`
-4. Push your changes to your fork: `git push origin new-assignment`
-5. Submit a pull request on GitHub.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for details.
