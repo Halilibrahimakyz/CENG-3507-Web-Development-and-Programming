@@ -37,7 +37,7 @@ function isLocalStorageEmpty() {
     var jsongradeData = JSON.parse(gradeData);
 
     if (jsonCourseData == null || jsonCourseData.length == 0) {
-        fetch('/json/courses.json')
+        fetch('./json/courses.json')
             .then(response => response.json())
             .then(data => {
                 localStorage.setItem('courseData', JSON.stringify(data));
@@ -45,7 +45,7 @@ function isLocalStorageEmpty() {
             .catch(error => console.error('Hata:', error));
     }
     if (jsonStudentData == null || jsonStudentData.length == 0) {
-        fetch('/json/students.json')
+        fetch('./json/students.json')
             .then(response => response.json())
             .then(data => {
                 localStorage.setItem('studentData', JSON.stringify(data));
@@ -53,7 +53,7 @@ function isLocalStorageEmpty() {
             .catch(error => console.error('Hata:', error));
     }
     if (jsongradeData == null || jsongradeData.length == 0) {
-        fetch('/json/grades.json')
+        fetch('./json/grades.json')
             .then(response => response.json())
             .then(data => {
                 localStorage.setItem('gradeData', JSON.stringify(data));
