@@ -15,4 +15,5 @@ This course is a fundamental introduction to web development and programming con
 ## Exams
 
 - [Midterm Exam](/exams/midterm)
+- [Final Exam](/exams/final)
 
