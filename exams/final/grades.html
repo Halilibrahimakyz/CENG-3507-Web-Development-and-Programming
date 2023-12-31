@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta information for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Material Design Icons stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
+    <!-- Title of the webpage -->
+    <title>Student management system</title>
+    <!-- Link to external stylesheet (style.css) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation bar section -->
+    <div class="navbar" id="myNavbar">
+        <div class="navbar-column">
+            <!-- Courses section in the navigation bar -->
+            <div class="navbar-item" id="courses">
+                <span id="navbar-icon" class="mdi mdi-book-open-variant"></span>
+                <a href="courses.html">Course</a>
+            </div>
+            <!-- Students section in the navigation bar -->
+            <div class="navbar-item" id="students">
+                <span id="navbar-icon" class="mdi mdi-account-school"></span>
+                <a href="students.html">Students</a>
+            </div>
+            <!-- Grades section in the navigation bar -->
+            <div class="navbar-item" id="grades">
+                <span class="mdi mdi-format-annotation-plus"></span>
+                <a href="grades.html">Grades</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main content area -->
+    <div id="main">
+        <div class="container">
+            <!-- Button to open the grade modal -->
+            <div style="width: '100%';display: flex;justify-content: flex-end;align-items: center;">
+                <button onclick="openGradeModal()">Add Grade</button>
+            </div>
+            <!-- Table area for displaying grades -->
+            <div class="table-area">
+                <table id="gradeTable">
+                    <!-- Table header with columns and sorting functionality -->
+                    <thead>
+                        <tr>
+                            <th onclick="sortTableGrades(0)">Course</th>
+                            <th onclick="sortTableGrades(1)">Student</th>
+                            <th onclick="sortTableGrades(2)">Midterm</th>
+                            <th onclick="sortTableGrades(3)">Final</th>
+                            <th onclick="sortTableGrades(4)">Average</th>
+                            <th onclick="sortTableGrades(5)">Letter Grade</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <!-- Table body to be populated with grade data -->
+                    <tbody id="gradeTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Modal for adding grades -->
+        <div id="gradeModal" class="modal">
+            <div class="modal-content">
+                <!-- Close button for the modal -->
+                <div style="width: '100%';display: flex;justify-content: flex-end;padding-bottom: 10px;">
+                    <span class="close" onclick="closeGradeModal()">&times;</span>
+                </div>
+                <!-- Form for adding grade details -->
+                <div
+                    style="width: '100%';display: flex;justify-content: space-between;align-items: center;padding-bottom: 10px;">
+                    <label for="gradeCourseInput">Course:</label>
+                    <select id="gradeCourseInput">
+                    </select>
+                </div>
+                <div
+                    style="width: '100%';display: flex;justify-content: space-between;align-items: center;padding-bottom: 10px;">
+                    <label for="gradeStudentInput">Student:</label>
+                    <select id="gradeStudentInput">
+                    </select>
+                </div>
+                <div
+                    style="width: '100%';display: flex;justify-content: space-between;align-items: center;padding-bottom: 10px;">
+                    <label for="midtermInput">Midterm</label>
+                    <input type="number" id="midtermInput" min="0" max="100">
+                </div>
+                <div
+                    style="width: '100%';display: flex;justify-content: space-between;align-items: center;padding-bottom: 10px;">
+                    <label for="finalInput">Final</label>
+                    <input type="number" id="finalInput" min="0" max="100">
+                </div>
+                <!-- Button to add a grade -->
+                <div style="width: '100%';display: flex;justify-content: flex-end;padding-bottom: 10px;">
+                    <button onclick="addGrade()">Add Grade</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for editing grades -->
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+                <!-- Close button for the modal -->
+                <div style="width: '100%';display: flex;justify-content: flex-end;padding-bottom: 10px;">
+                    <span class="close" onclick="closeEditModal()">&times;</span>
+                </div>
+                <!-- Form for editing grade details -->
+                <div
+                    style="width: '100%';display: flex;justify-content: space-between;align-items: center;padding-bottom: 10px;">
+                    <label for="editGradeCourse">Course:</label>
+                    <input type="text" id="editGradeCourse" readonly>
+                </div>
+                <div
+                    style="width: '100%';display: flex;justify-content: space-between;align-items: center;padding-bottom: 10px;">
+                    <label for="editGradeStudent">Student:</label>
+                    <input type="text" id="editGradeStudent" readonly>
+                </div>
+                <div
+                    style="width: '100%';display: flex;justify-content: space-between;align-items: center;padding-bottom: 10px;">
+                    <label for="editMidterm">Midterm:</label>
+                    <input type="number" id="editMidterm" min="0" max="100">
+                </div>
+                <div
+                    style="width: '100%';display: flex;justify-content: space-between;align-items: center;padding-bottom: 10px;">
+                    <label for="editFinal">Final:</label>
+                    <input type="number" id="editFinal" min="0" max="100">
+                </div>
+                <!-- Buttons to save changes or cancel -->
+                <div style="width: '100%';display: flex;justify-content: flex-end;padding-bottom: 10px;">
+                    <button onclick="updateGrade()" style="margin-right: 5px;">Save changes</button>
+                    <button onclick="closeEditModal()">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scripts for handling interactions -->
+        <script src="/scripts/script.js"></script>
+        <script src="/scripts/grades.js"></script>
+
+    </div>
+
+</body>
+
+</html>

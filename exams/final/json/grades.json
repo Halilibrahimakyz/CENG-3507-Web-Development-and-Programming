@@ -1,0 +1,642 @@
+[
+    {
+        "gradeCourse": "Web Development and Programming",
+        "gradeStudent": "Halil İbrahim Akyüz",
+        "midterm": "85",
+        "final": "90",
+        "avarage": "88",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Web Development and Programming",
+        "gradeStudent": "Ahmet Yılmaz",
+        "midterm": "78",
+        "final": "82",
+        "avarage": "80.4",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Web Development and Programming",
+        "gradeStudent": "Ayşe Demir",
+        "midterm": "92",
+        "final": "88",
+        "avarage": "89.6",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Web Development and Programming",
+        "gradeStudent": "Mustafa Kaya",
+        "midterm": "65",
+        "final": "75",
+        "avarage": "71",
+        "letterGrade": "C"
+    },
+    {
+        "gradeCourse": "Web Development and Programming",
+        "gradeStudent": "Zeynep Çelik",
+        "midterm": "88",
+        "final": "92",
+        "avarage": "90.4",
+        "letterGrade": "A"
+    },
+    {
+        "gradeCourse": "Web Development and Programming",
+        "gradeStudent": "Mehmet Acar",
+        "midterm": "75",
+        "final": "80",
+        "avarage": "78",
+        "letterGrade": "C"
+    },
+    {
+        "gradeCourse": "Web Development and Programming",
+        "gradeStudent": "Fatma Şahin",
+        "midterm": "80",
+        "final": "85",
+        "avarage": "83",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Web Development and Programming",
+        "gradeStudent": "Ali Tekin",
+        "midterm": "70",
+        "final": "78",
+        "avarage": "74.8",
+        "letterGrade": "C"
+    },
+    {
+        "gradeCourse": "Backend Development",
+        "gradeStudent": "Halil İbrahim Akyüz",
+        "midterm": "60",
+        "final": "75",
+        "avarage": "69",
+        "letterGrade": "D"
+    },
+    {
+        "gradeCourse": "Backend Development",
+        "gradeStudent": "Ahmet Yılmaz",
+        "midterm": "75",
+        "final": "80",
+        "avarage": "78",
+        "letterGrade": "C"
+    },
+    {
+        "gradeCourse": "Backend Development",
+        "gradeStudent": "Ayşe Demir",
+        "midterm": "85",
+        "final": "90",
+        "avarage": "88",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Backend Development",
+        "gradeStudent": "Mustafa Kaya",
+        "midterm": "92",
+        "final": "88",
+        "avarage": "89.6",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Backend Development",
+        "gradeStudent": "Zeynep Çelik",
+        "midterm": "70",
+        "final": "75",
+        "avarage": "73",
+        "letterGrade": "C"
+    },
+    {
+        "gradeCourse": "Backend Development",
+        "gradeStudent": "Mehmet Acar",
+        "midterm": "78",
+        "final": "82",
+        "avarage": "80.4",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Backend Development",
+        "gradeStudent": "Fatma Şahin",
+        "midterm": "65",
+        "final": "70",
+        "avarage": "68",
+        "letterGrade": "D"
+    },
+    {
+        "gradeCourse": "Backend Development",
+        "gradeStudent": "Ali Tekin",
+        "midterm": "88",
+        "final": "92",
+        "avarage": "90.4",
+        "letterGrade": "A"
+    },
+    {
+        "gradeCourse": "Mobile App Development",
+        "gradeStudent": "Halil İbrahim Akyüz",
+        "midterm": "75",
+        "final": "65",
+        "avarage": "69",
+        "letterGrade": "F"
+    },
+    {
+        "gradeCourse": "Mobile App Development",
+        "gradeStudent": "Ahmet Yılmaz",
+        "midterm": "85",
+        "final": "75",
+        "avarage": "79",
+        "letterGrade": "C"
+    },
+    {
+        "gradeCourse": "Mobile App Development",
+        "gradeStudent": "Ayşe Demir",
+        "midterm": "70",
+        "final": "85",
+        "avarage": "79",
+        "letterGrade": "C"
+    },
+    {
+        "gradeCourse": "Mobile App Development",
+        "gradeStudent": "Mustafa Kaya",
+        "midterm": "60",
+        "final": "80",
+        "avarage": "72",
+        "letterGrade": "D"
+    },
+    {
+        "gradeCourse": "Mobile App Development",
+        "gradeStudent": "Zeynep Çelik",
+        "midterm": "92",
+        "final": "88",
+        "avarage": "89.6",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Mobile App Development",
+        "gradeStudent": "Mehmet Acar",
+        "midterm": "75",
+        "final": "70",
+        "avarage": "72",
+        "letterGrade": "D"
+    },
+    {
+        "gradeCourse": "Mobile App Development",
+        "gradeStudent": "Fatma Şahin",
+        "midterm": "80",
+        "final": "90",
+        "avarage": "86",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Mobile App Development",
+        "gradeStudent": "Ali Tekin",
+        "midterm": "78",
+        "final": "85",
+        "avarage": "82.2",
+        "letterGrade": "C"
+    },
+    {
+        "gradeCourse": "Data Science",
+        "gradeStudent": "Halil İbrahim Akyüz",
+        "midterm": "80",
+        "final": "85",
+        "avarage": "83",
+        "letterGrade": "C"
+    },
+    {
+        "gradeCourse": "Data Science",
+        "gradeStudent": "Ahmet Yılmaz",
+        "midterm": "92",
+        "final": "88",
+        "avarage": "89.6",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Data Science",
+        "gradeStudent": "Ayşe Demir",
+        "midterm": "65",
+        "final": "75",
+        "avarage": "71",
+        "letterGrade": "D"
+    },
+    {
+        "gradeCourse": "Data Science",
+        "gradeStudent": "Mustafa Kaya",
+        "midterm": "70",
+        "final": "80",
+        "avarage": "76",
+        "letterGrade": "D"
+    },
+    {
+        "gradeCourse": "Data Science",
+        "gradeStudent": "Zeynep Çelik",
+        "midterm": "88",
+        "final": "92",
+        "avarage": "90.4",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Data Science",
+        "gradeStudent": "Mehmet Acar",
+        "midterm": "75",
+        "final": "70",
+        "avarage": "72",
+        "letterGrade": "D"
+    },
+    {
+        "gradeCourse": "Data Science",
+        "gradeStudent": "Fatma Şahin",
+        "midterm": "78",
+        "final": "85",
+        "avarage": "82.2",
+        "letterGrade": "C"
+    },
+    {
+        "gradeCourse": "Data Science",
+        "gradeStudent": "Ali Tekin",
+        "midterm": "60",
+        "final": "75",
+        "avarage": "69",
+        "letterGrade": "F"
+    },
+    {
+        "gradeCourse": "Machine Learning",
+        "gradeStudent": "Halil İbrahim Akyüz",
+        "midterm": "70",
+        "final": "80",
+        "avarage": "76",
+        "letterGrade": "C"
+    },
+    {
+        "gradeCourse": "Machine Learning",
+        "gradeStudent": "Ahmet Yılmaz",
+        "midterm": "88",
+        "final": "92",
+        "avarage": "90.4",
+        "letterGrade": "A"
+    },
+    {
+        "gradeCourse": "Machine Learning",
+        "gradeStudent": "Ayşe Demir",
+        "midterm": "78",
+        "final": "85",
+        "avarage": "82.2",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Machine Learning",
+        "gradeStudent": "Mustafa Kaya",
+        "midterm": "60",
+        "final": "75",
+        "avarage": "69",
+        "letterGrade": "D"
+    },
+    {
+        "gradeCourse": "Machine Learning",
+        "gradeStudent": "Zeynep Çelik",
+        "midterm": "92",
+        "final": "88",
+        "avarage": "89.6",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Machine Learning",
+        "gradeStudent": "Mehmet Acar",
+        "midterm": "70",
+        "final": "75",
+        "avarage": "73",
+        "letterGrade": "C"
+    },
+    {
+        "gradeCourse": "Machine Learning",
+        "gradeStudent": "Fatma Şahin",
+        "midterm": "80",
+        "final": "90",
+        "avarage": "86",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Machine Learning",
+        "gradeStudent": "Ali Tekin",
+        "midterm": "65",
+        "final": "80",
+        "avarage": "74",
+        "letterGrade": "C"
+    },
+    {
+        "gradeCourse": "Game Development",
+        "gradeStudent": "Halil İbrahim Akyüz",
+        "midterm": "88",
+        "final": "92",
+        "avarage": "90.4",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Game Development",
+        "gradeStudent": "Ahmet Yılmaz",
+        "midterm": "75",
+        "final": "70",
+        "avarage": "72",
+        "letterGrade": "D"
+    },
+    {
+        "gradeCourse": "Game Development",
+        "gradeStudent": "Ayşe Demir",
+        "midterm": "78",
+        "final": "85",
+        "avarage": "82.2",
+        "letterGrade": "C"
+    },
+    {
+        "gradeCourse": "Game Development",
+        "gradeStudent": "Mustafa Kaya",
+        "midterm": "92",
+        "final": "88",
+        "avarage": "89.6",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Game Development",
+        "gradeStudent": "Zeynep Çelik",
+        "midterm": "60",
+        "final": "75",
+        "avarage": "69",
+        "letterGrade": "F"
+    },
+    {
+        "gradeCourse": "Game Development",
+        "gradeStudent": "Mehmet Acar",
+        "midterm": "70",
+        "final": "80",
+        "avarage": "76",
+        "letterGrade": "D"
+    },
+    {
+        "gradeCourse": "Game Development",
+        "gradeStudent": "Fatma Şahin",
+        "midterm": "80",
+        "final": "90",
+        "avarage": "86",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Game Development",
+        "gradeStudent": "Ali Tekin",
+        "midterm": "65",
+        "final": "84",
+        "avarage": "76.4",
+        "letterGrade": "D"
+    },
+    {
+        "gradeCourse": "DevOps",
+        "gradeStudent": "Halil İbrahim Akyüz",
+        "midterm": "95",
+        "final": "98",
+        "avarage": "96.8",
+        "letterGrade": "A"
+    },
+    {
+        "gradeCourse": "DevOps",
+        "gradeStudent": "Ahmet Yılmaz",
+        "midterm": "78",
+        "final": "82",
+        "avarage": "80.4",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "DevOps",
+        "gradeStudent": "Ayşe Demir",
+        "midterm": "92",
+        "final": "88",
+        "avarage": "89.6",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "DevOps",
+        "gradeStudent": "Mustafa Kaya",
+        "midterm": "70",
+        "final": "75",
+        "avarage": "73",
+        "letterGrade": "C"
+    },
+    {
+        "gradeCourse": "DevOps",
+        "gradeStudent": "Zeynep Çelik",
+        "midterm": "88",
+        "final": "92",
+        "avarage": "90.4",
+        "letterGrade": "A"
+    },
+    {
+        "gradeCourse": "DevOps",
+        "gradeStudent": "Mehmet Acar",
+        "midterm": "75",
+        "final": "80",
+        "avarage": "78",
+        "letterGrade": "C"
+    },
+    {
+        "gradeCourse": "DevOps",
+        "gradeStudent": "Fatma Şahin",
+        "midterm": "80",
+        "final": "85",
+        "avarage": "83",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "DevOps",
+        "gradeStudent": "Ali Tekin",
+        "midterm": "65",
+        "final": "70",
+        "avarage": "68",
+        "letterGrade": "D"
+    },
+    {
+        "gradeCourse": "Cybersecurity",
+        "gradeStudent": "Halil İbrahim Akyüz",
+        "midterm": "100",
+        "final": "98",
+        "avarage": "98.8",
+        "letterGrade": "A"
+    },
+    {
+        "gradeCourse": "Cybersecurity",
+        "gradeStudent": "Ahmet Yılmaz",
+        "midterm": "78",
+        "final": "82",
+        "avarage": "80.4",
+        "letterGrade": "C"
+    },
+    {
+        "gradeCourse": "Cybersecurity",
+        "gradeStudent": "Ayşe Demir",
+        "midterm": "90",
+        "final": "90",
+        "avarage": "90",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Cybersecurity",
+        "gradeStudent": "Mustafa Kaya",
+        "midterm": "85",
+        "final": "88",
+        "avarage": "86.8",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Cybersecurity",
+        "gradeStudent": "Zeynep Çelik",
+        "midterm": "92",
+        "final": "94",
+        "avarage": "93.2",
+        "letterGrade": "A"
+    },
+    {
+        "gradeCourse": "Cybersecurity",
+        "gradeStudent": "Mehmet Acar",
+        "midterm": "75",
+        "final": "78",
+        "avarage": "76.8",
+        "letterGrade": "D"
+    },
+    {
+        "gradeCourse": "Cybersecurity",
+        "gradeStudent": "Fatma Şahin",
+        "midterm": "80",
+        "final": "85",
+        "avarage": "83",
+        "letterGrade": "C"
+    },
+    {
+        "gradeCourse": "Cybersecurity",
+        "gradeStudent": "Ali Tekin",
+        "midterm": "70",
+        "final": "75",
+        "avarage": "73",
+        "letterGrade": "D"
+    },
+    {
+        "gradeCourse": "Cloud Computing",
+        "gradeStudent": "Halil İbrahim Akyüz",
+        "midterm": "80",
+        "final": "85",
+        "avarage": "83",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Cloud Computing",
+        "gradeStudent": "Ahmet Yılmaz",
+        "midterm": "88",
+        "final": "90",
+        "avarage": "89.2",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Cloud Computing",
+        "gradeStudent": "Ayşe Demir",
+        "midterm": "92",
+        "final": "94",
+        "avarage": "93.2",
+        "letterGrade": "A"
+    },
+    {
+        "gradeCourse": "Cloud Computing",
+        "gradeStudent": "Mustafa Kaya",
+        "midterm": "70",
+        "final": "74",
+        "avarage": "72.4",
+        "letterGrade": "C"
+    },
+    {
+        "gradeCourse": "Cloud Computing",
+        "gradeStudent": "Zeynep Çelik",
+        "midterm": "85",
+        "final": "88",
+        "avarage": "86.8",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Cloud Computing",
+        "gradeStudent": "Mehmet Acar",
+        "midterm": "78",
+        "final": "82",
+        "avarage": "80.4",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "Cloud Computing",
+        "gradeStudent": "Fatma Şahin",
+        "midterm": "60",
+        "final": "65",
+        "avarage": "62.5",
+        "letterGrade": "F"
+    },
+    {
+        "gradeCourse": "Cloud Computing",
+        "gradeStudent": "Ali Tekin",
+        "midterm": "90",
+        "final": "95",
+        "avarage": "93",
+        "letterGrade": "A"
+    },
+    {
+        "gradeCourse": "UI/UX Design",
+        "gradeStudent": "Halil İbrahim Akyüz",
+        "midterm": "69",
+        "final": "78",
+        "avarage": "74.4",
+        "letterGrade": "D"
+    },
+    {
+        "gradeCourse": "UI/UX Design",
+        "gradeStudent": "Ahmet Yılmaz",
+        "midterm": "75",
+        "final": "80",
+        "avarage": "78",
+        "letterGrade": "C"
+    },
+    {
+        "gradeCourse": "UI/UX Design",
+        "gradeStudent": "Ayşe Demir",
+        "midterm": "80",
+        "final": "85",
+        "avarage": "83",
+        "letterGrade": "C"
+    },
+    {
+        "gradeCourse": "UI/UX Design",
+        "gradeStudent": "Mustafa Kaya",
+        "midterm": "60",
+        "final": "70",
+        "avarage": "66",
+        "letterGrade": "F"
+    },
+    {
+        "gradeCourse": "UI/UX Design",
+        "gradeStudent": "Zeynep Çelik",
+        "midterm": "92",
+        "final": "94",
+        "avarage": "93.2",
+        "letterGrade": "A"
+    },
+    {
+        "gradeCourse": "UI/UX Design",
+        "gradeStudent": "Mehmet Acar",
+        "midterm": "78",
+        "final": "82",
+        "avarage": "80.4",
+        "letterGrade": "C"
+    },
+    {
+        "gradeCourse": "UI/UX Design",
+        "gradeStudent": "Fatma Şahin",
+        "midterm": "85",
+        "final": "88",
+        "avarage": "86.8",
+        "letterGrade": "B"
+    },
+    {
+        "gradeCourse": "UI/UX Design",
+        "gradeStudent": "Ali Tekin",
+        "midterm": "70",
+        "final": "74",
+        "avarage": "72.4",
+        "letterGrade": "D"
+    }
+]

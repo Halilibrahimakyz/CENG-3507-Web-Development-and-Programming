@@ -1,0 +1,165 @@
+<!-- HTML document declaration with language set to English -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta information for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Material Design Icons stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
+    <!-- Title of the webpage -->
+    <title>Navbar Example</title>
+    <!-- Link to external stylesheet (style.css) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation bar section -->
+    <div class="navbar" id="myNavbar">
+        <div class="navbar-column">
+            <!-- Courses section in the navigation bar -->
+            <div class="navbar-item" id="courses">
+                <span id="navbar-icon" class="mdi mdi-book-open-variant"></span>
+                <a href="courses.html">Course</a>
+            </div>
+            <!-- Students section in the navigation bar -->
+            <div class="navbar-item" id="students">
+                <span id="navbar-icon" class="mdi mdi-account-school"></span>
+                <a href="students.html">Students</a>
+            </div>
+            <!-- Grades section in the navigation bar -->
+            <div class="navbar-item" id="grades">
+                <span class="mdi mdi-format-annotation-plus"></span>
+                <a href="grades.html">Grades</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main content area -->
+    <div id="main">
+        <div class="container">
+            <!-- Search and Add Student button section -->
+            <div style="width: '100%';display: flex;justify-content: space-between;align-items: center;">
+                <input type="text" id="searchInputStudent" oninput="searchStudents()" placeholder="Search by name">
+                <button onclick="openStudentModal()">Add Student</button>
+            </div>
+            <!-- Table area for displaying students -->
+            <div class="table-area">
+                <table id="studentTable">
+                    <!-- Table header with columns and sorting functionality -->
+                    <thead>
+                        <tr>
+                            <th onclick="sortTableStudents(0)">ID</th>
+                            <th onclick="sortTableStudents(1)">Name</th>
+                            <th onclick="sortTableStudents(2)">Surname</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <!-- Table body to be populated with student data -->
+                    <tbody id="studentTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for adding students -->
+    <div id="studentModal" class="modal">
+        <div class="modal-content">
+            <!-- Close button for the modal -->
+            <div style="width: '100%';display: flex;justify-content: flex-end;padding-bottom: 10px;">
+                <span class="close" onclick="closeStudentModal()">&times;</span>
+            </div>
+            <!-- Form for adding student details -->
+            <div
+                style="width: '100%';display: flex;justify-content: space-between;align-items: center;padding-bottom: 10px;">
+                <label for="studentIdInput">ID:</label>
+                <input type="text" id="studentIdInput">
+            </div>
+            <div
+                style="width: '100%';display: flex;justify-content: space-between;align-items: center;padding-bottom: 10px;">
+                <label for="studentNameInput">Name:</label>
+                <input type="text" id="studentNameInput">
+            </div>
+            <div
+                style="width: '100%';display: flex;justify-content: space-between;align-items: center;padding-bottom: 10px;">
+                <label for="studentSurnameInput">Surname:</label>
+                <input type="text" id="studentSurnameInput">
+            </div>
+            <!-- Button to add a student -->
+            <div style="width: '100%';display: flex;justify-content: flex-end;padding-bottom: 10px;">
+                <button onclick="addStudent()">Add Student</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for editing students -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <!-- Close button for the modal -->
+            <div style="width: '100%';display: flex;justify-content: flex-end;padding-bottom: 10px;">
+                <span class="close" onclick="closeEditModal()">&times;</span>
+            </div>
+            <!-- Form for editing student details -->
+            <div
+                style="width: '100%';display: flex;justify-content: space-between;align-items: center;padding-bottom: 10px;">
+                <label for="editStudentId">ID:</label>
+                <input type="text" id="editStudentId">
+            </div>
+            <div
+                style="width: '100%';display: flex;justify-content: space-between;align-items: center;padding-bottom: 10px;">
+                <label for="editStudentName">Name:</label>
+                <input type="text" id="editStudentName">
+            </div>
+            <div
+                style="width: '100%';display: flex;justify-content: space-between;align-items: center;padding-bottom: 10px;">
+                <label for="editStudentSurname">Surname:</label>
+                <input type="text" id="editStudentSurname">
+            </div>
+            <!-- Buttons to save changes or cancel editing -->
+            <div style="width: '100%';display: flex;justify-content: flex-end;padding-bottom: 10px;">
+                <button onclick="updateStudent()" style="margin-right: 5px;">Save changes</button>
+                <button onclick="closeEditModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for viewing students with grades -->
+    <div id="viewStudentModal" class="modal">
+        <div class="modal-content">
+            <!-- Close button for the modal -->
+            <div style="width: '100%';display: flex;justify-content: flex-end;padding-bottom: 10px;">
+                <span class="close" onclick="closeCourseViewModal()">&times;</span>
+            </div>
+            <!-- Table area for displaying students with grades -->
+            <div class="table-area">
+                <table id="StudentWithTable">
+                    <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Student</th>
+                            <th>Midterm</th>
+                            <th>Final</th>
+                            <th>Average</th>
+                            <th>Letter Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody id="StudentWithTableBody"></tbody>
+                </table>
+            </div>
+            <!-- Statistics row for general average -->
+            <div id="generalAverageRow" style="padding-top: 10px;">
+                <span>General Average:</span>
+                <span id="generalAverageValue">0</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript script references -->
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/students.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+:root {
+    --white: #dedddd;
+    --whiteOpac: rgb(122, 123, 124);
+    --yellow: #F4CE14;
+    --gray: #393E46;
+    --black: #191825;
+    --red: #DF2E38;
+    --green: #79D70F;
+}
+
+
+body {
+    background-color: var(--white);
+    font-family: Tahoma, sans-serif;
+    margin: 0px;
+}
+
+.navbar {
+    height: 100%;
+    width: 80px;
+    /* Başlangıç genişliği */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    background-color: var(--gray);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+    /* align-items: center; */
+}
+
+.navbar:hover {
+    width: 250px;
+    /* Mouse geldiğinde genişlik */
+}
+
+.navbar a {
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--yellow);
+    display: block;
+    transition: 0.5s;
+    text-align: left;
+    display: none;
+}
+
+
+.navbar-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.navbar-item.active {
+    background-color: var(--yellow)
+}
+
+.navbar-item.active a {
+    color: var(--gray)
+}
+
+.navbar-item.active .mdi-account-school {
+    color: var(--gray)
+}
+
+.navbar-item.active .mdi-format-annotation-plus {
+    color: var(--gray)
+}
+
+.navbar-item.active .mdi-book-open-variant {
+    color: var(--gray)
+}
+
+.navbar:hover .navbar-item {
+    justify-content: start;
+    padding-left: 10px;
+}
+
+.navbar-item:hover a {
+    color: white;
+}
+
+.navbar-item:hover .mdi-account-school {
+    color: white;
+}
+
+.navbar-item:hover .mdi-format-annotation-plus {
+    color: white;
+}
+
+.navbar-item:hover .mdi-book-open-variant {
+    color: white;
+}
+
+
+.mdi.mdi-account-school {
+    font-size: 35px;
+    /* Örneğin, 24 piksel */
+    color: var(--yellow);
+}
+
+.mdi.mdi-format-annotation-plus {
+    font-size: 35px;
+    /* Örneğin, 24 piksel */
+    color: var(--yellow);
+}
+
+.mdi.mdi-book-open-variant {
+    font-size: 35px;
+    /* Örneğin, 24 piksel */
+    color: var(--yellow);
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 50px;
+    margin-left: 80px;
+    /* Navbar başlangıç genişliği kadar sola kaydır */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* Dikeyde ortalama */
+    justify-content: center;
+}
+
+.navbar:hover+#main {
+    margin-left: 250px;
+}
+
+
+#logo {
+    /* display: none; */
+    width: 100%;
+}
+
+.navbar:hover a {
+    display: block;
+}
+
+
+
+.container {
+    padding: 10px;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    /* overflow-x: auto;  */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* padding-top: 60px; */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* Kapat düğmesi stilleri */
+.close {
+    color: #aaa;
+    /* float: right; */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    /* margin-bottom: 16px; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input,
+        select {
+            width: 80%;
+            padding: 10px;
+            /* margin-bottom: 16px; */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+.table-area {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-height: 600px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    z-index: 2; /* Başlığın içeriğin üzerinde olmasını sağlar */
+}
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+th {
+    background-color: var(--gray);
+    color: var(--yellow);
+}
+th:hover {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+}
+
+button {
+    background-color: var(--gray);
+    /* Gri arkaplan rengi */
+    color: #fff;
+    /* Beyaz yazı rengi */
+    padding: 10px 20px;
+    /* Yatay ve dikey iç içe padding */
+    border: none;
+    /* Kenarlık yok */
+    border-radius: 5px;
+    /* Yuvarlatılmış kenarlar */
+    cursor: pointer;
+    /* İşaretçiyi el tipine çevir */
+}
+
+button:hover {
+    color: var(--yellow);
+    /* Hover durumunda daha koyu gri arkaplan rengi */
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta information for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Material Design Icons stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
+    <!-- Title of the webpage -->
+    <title>Student management system</title>
+    <!-- Link to external stylesheet (style.css) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation bar section -->
+    <div class="navbar" id="myNavbar">
+        <div class="navbar-column">
+            <!-- Courses section in the navigation bar -->
+            <div class="navbar-item" id="courses">
+                <span id="navbar-icon" class="mdi mdi-book-open-variant"></span>
+                <a href="courses.html">Course</a>
+            </div>
+            <!-- Students section in the navigation bar -->
+            <div class="navbar-item" id="students">
+                <span id="navbar-icon" class="mdi mdi-account-school"></span>
+                <a href="students.html">Students</a>
+            </div>
+            <!-- Grades section in the navigation bar -->
+            <div class="navbar-item" id="grades">
+                <span class="mdi mdi-format-annotation-plus"></span>
+                <a href="grades.html">Grades</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main content area -->
+    <div id="main">
+        <div class="container">
+            <!-- Search and Add Course button section -->
+            <div style="width: '100%';display: flex;justify-content: space-between;align-items: center;">
+                <input type="text" id="searchInputCourse" oninput="searchCourse()" placeholder="Search by name">
+                <button onclick="openCourseModal()">Add Course</button>
+            </div>
+            <!-- Table area for displaying courses -->
+            <div class="table-area">
+                <table id="courseTable">
+                    <!-- Table header with columns and sorting functionality -->
+                    <thead>
+                        <tr>
+                            <th onclick="sortTableCourse(0)">ID</th>
+                            <th onclick="sortTableCourse(1)">Name</th>
+                            <th onclick="sortTableCourse(2)">Point Scale</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <!-- Table body to be populated with course data -->
+                    <tbody id="courseTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Modal for adding courses -->
+        <div id="courseModal" class="modal">
+            <div class="modal-content">
+                <!-- Close button for the modal -->
+                <div style="width: '100%';display: flex;justify-content: flex-end;padding-bottom: 10px;">
+                    <span class="close" onclick="closeCourseModal()">&times;</span>
+                </div>
+                <!-- Form for adding course details -->
+                <div
+                    style="width: '100%';display: flex;justify-content: space-between;align-items: center;padding-bottom: 10px;">
+                    <label for="courseIdInput">ID: </label>
+                    <input type="text" id="courseIdInput">
+                </div>
+                <div
+                    style="width: '100%';display: flex;justify-content: space-between;align-items: center;padding-bottom: 10px;">
+                    <label for="courseNameInput">Name:</label>
+                    <input type="text" id="courseNameInput">
+                </div>
+                <div
+                    style="width: '100%';display: flex;justify-content: space-between;align-items: center;padding-bottom: 10px;">
+                    <label for="coursePointScaleInput">Point Scale:</label>
+                    <select id="coursePointScaleInput">
+                        <option value="10">10</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+                <!-- Button to add a course -->
+                <div style="width: '100%';display: flex;justify-content: flex-end;padding-bottom: 10px;">
+                    <button onclick="addCourse()">Add Course</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for editing courses -->
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+                <!-- Close button for the modal -->
+                <div style="width: '100%';display: flex;justify-content: flex-end;padding-bottom: 10px;">
+                    <span class="close" onclick="closeEditModal()">&times;</span>
+                </div>
+                <!-- Form for editing course details -->
+                <div
+                    style="width: '100%';display: flex;justify-content: space-between;align-items: center;padding-bottom: 10px;">
+                    <label for="editCourseId">ID:</label>
+                    <input type="text" id="editCourseId">
+                </div>
+                <div
+                    style="width: '100%';display: flex;justify-content: space-between;align-items: center;padding-bottom: 10px;">
+                    <label for="editCourseName">Name:</label>
+                    <input type="text" id="editCourseName">
+                </div>
+                <div
+                    style="width: '100%';display: flex;justify-content: space-between;align-items: center;padding-bottom: 10px;">
+                    <label for="editCoursePointScale">Point Scale:</label>
+                    <select id="editCoursePointScale">
+                        <option value="10">10</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+                <!-- Buttons to save changes or cancel editing -->
+                <div style="width: '100%';display: flex;justify-content: flex-end;padding-bottom: 10px;">
+                    <button onclick="updateCourse()" style="margin-right: 5px;">Save changes</button>
+                    <button onclick="closeEditModal()">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for viewing courses with grades -->
+        <div id="viewCourseModal" class="modal">
+            <div class="modal-content">
+                <!-- Close button for the modal -->
+                <div style="width: '100%';display: flex;justify-content: flex-end;padding-bottom: 10px;">
+                    <span class="close" onclick="closeCourseViewModal()">&times;</span>
+                </div>
+                <!-- Filter and table for viewing courses with grades -->
+                <div
+                    style="width: '100%';display: flex;justify-content: space-between;align-items: center;padding-bottom: 10px;">
+                    <label for="successFilter">Filter</label>
+                    <select id="successFilter" onchange="filterTable()">
+                        <option value="all">All</option>
+                        <option value="successful">Successful</option>
+                        <option value="unsuccessful">Unsuccessful</option>
+                    </select>
+                </div>
+                <!-- Table for displaying courses with grades -->
+                <div class="table-area">
+                    <table id="CourseWithTable">
+                        <thead>
+                            <tr>
+                                <th>Course</th>
+                                <th>Student</th>
+                                <th>Midterm</th>
+                                <th>Final</th>
+                                <th>Average</th>
+                                <th>Letter Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody id="CourseWithTableBody"></tbody>
+                    </table>
+                </div>
+                <!-- Statistics row for general averages and counts -->
+                <div id="generalAverageRow" style="padding-top: 10px;">
+                    <span>General Average:</span>
+                    <span id="generalAverageValue">0</span>
+                    <span>Successful Count:</span>
+                    <span id="successfulCount">0</span>
+                    <span>Unsuccessful Count:</span>
+                    <span id="unsuccessfulCount">0</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript script references -->
+        <script src="/scripts/script.js"></script>
+        <script src="/scripts/courses.js"></script>
+
+    </div>
+</body>
+
+</html>

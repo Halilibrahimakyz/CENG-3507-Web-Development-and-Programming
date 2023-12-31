@@ -1,0 +1,12 @@
+[
+    { "id": 3507, "name": "Web Development and Programming", "pointScale": "10" },
+    { "id": 3508, "name": "Backend Development", "pointScale": "10" },
+    { "id": 3509, "name": "Mobile App Development", "pointScale": "7" },
+    { "id": 4503, "name": "Data Science", "pointScale":"7" },
+    { "id": 4504, "name": "Machine Learning", "pointScale": "10" },
+    { "id": 4505, "name": "Game Development", "pointScale": "7" },
+    { "id": 4506, "name": "DevOps", "pointScale": "10" },
+    { "id": 4507, "name": "Cybersecurity", "pointScale": "7" },
+    { "id": 4508, "name": "Cloud Computing", "pointScale": "10" },
+    { "id": 4509, "name": "UI/UX Design", "pointScale": "7" }
+  ]
