@@ -6,13 +6,19 @@ This project is a simple web-based Student Management System that allows users t
 
 The Student Management System provides the following features:
 
-### Courses: Manage courses, including adding, editing, and viewing course details.
+### Courses:
 
-### Students: Manage students, including adding, editing, and viewing student details. You can also search for students by name.
+Manage courses, including adding, editing, and viewing course details.
 
-### Grades: Manage grades, including adding, editing, and viewing grade details. The system calculates averages and letter grades.
+### Students: 
 
-##Features
+Manage students, including adding, editing, and viewing student details. You can also search for students by name.
+
+### Grades:
+
+ Manage grades, including adding, editing, and viewing grade details. The system calculates averages and letter grades.
+
+## Features
 
 - Responsive design for different screen sizes.
 - Use of Material Design Icons for a visually appealing interface.
